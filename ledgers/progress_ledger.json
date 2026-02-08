@@ -900,9 +900,99 @@
       "status": "success",
       "timestamp": "2026-02-08 15:57:16.865344",
       "observed_state": {}
+    },
+    {
+      "index": 100,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['Uncommitted changes:\\nM .agent/reflections.json\\nMM .beads/issues.jsonl']",
+      "status": "failure",
+      "timestamp": "2026-02-08 16:04:47.823598",
+      "observed_state": {}
+    },
+    {
+      "index": 101,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Clean Finalization complete",
+      "status": "success",
+      "timestamp": "2026-02-08 16:05:01.419542",
+      "observed_state": {}
+    },
+    {
+      "index": 102,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['Uncommitted changes:\\nM .beads/issues.jsonl']",
+      "status": "failure",
+      "timestamp": "2026-02-08 16:12:35.153849",
+      "observed_state": {}
+    },
+    {
+      "index": 103,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['Multiple commits detected (2). Squash required.', '  Run: git rebase -i HEAD~2']",
+      "status": "failure",
+      "timestamp": "2026-02-08 16:12:49.484293",
+      "observed_state": {}
+    },
+    {
+      "index": 104,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Clean Finalization complete",
+      "status": "success",
+      "timestamp": "2026-02-08 16:13:02.709646",
+      "observed_state": {}
+    },
+    {
+      "index": 105,
+      "task_id": "harness",
+      "action": "Phase: Initialization",
+      "outcome": "Passed with warnings: ['Plan approval is 37.5 hours old (stale)', 'Progress log missing - run /log-progress to initialize context']",
+      "status": "success",
+      "timestamp": "2026-02-08 17:57:13.106964",
+      "observed_state": {}
+    },
+    {
+      "index": 106,
+      "task_id": "harness",
+      "action": "Phase: Initialization",
+      "outcome": "Passed with warnings: ['Plan approval is 37.5 hours old (stale)', 'Progress log missing - run /log-progress to initialize context']",
+      "status": "success",
+      "timestamp": "2026-02-08 17:57:43.632952",
+      "observed_state": {}
+    },
+    {
+      "index": 107,
+      "task_id": "harness",
+      "action": "Phase: Initialization",
+      "outcome": "Passed with warnings: ['Plan approval is 37.5 hours old (stale)']",
+      "status": "success",
+      "timestamp": "2026-02-08 17:58:20.747009",
+      "observed_state": {}
+    },
+    {
+      "index": 108,
+      "task_id": "harness",
+      "action": "Phase: Initialization",
+      "outcome": "Clean initialization complete",
+      "status": "success",
+      "timestamp": "2026-02-08 18:06:15.388097",
+      "observed_state": {}
+    },
+    {
+      "index": 109,
+      "task_id": "harness",
+      "action": "Phase: Initialization",
+      "outcome": "Blocked: ['Plan approval is 5.0 hours old (stale)']",
+      "status": "failure",
+      "timestamp": "2026-02-08 18:06:26.544299",
+      "observed_state": {}
     }
   ],
-  "current_step_index": 99,
+  "current_step_index": 109,
   "stalls_detected": 0,
   "replan_history": []
 }

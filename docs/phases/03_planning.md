@@ -60,7 +60,8 @@ Progressive disclosure levels:
 - [ ] Present plan to user for review
 - [ ] Address feedback and update plan
 - [ ] **Receive explicit approval** (e.g., "👍 APPROVED FOR EXECUTION")
-- [ ] Record approval timestamp in `task.md`
+- [ ] Record approval in `task.md` (Orchestrator looks for `## Approval` header or `[x]` markers)
+- [ ] **Freshness Requirement**: Approval must be within the last 4 hours (validated via file modification time)
 
 ---
 
