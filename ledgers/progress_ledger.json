@@ -747,9 +747,252 @@
       "status": "failure",
       "timestamp": "2026-02-08 04:12:28.473766",
       "observed_state": {}
+    },
+    {
+      "index": 83,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['Uncommitted changes:\\nM .beads/issues.jsonl', 'No commits ahead of origin/main']",
+      "status": "failure",
+      "timestamp": "2026-02-08 04:14:31.075216",
+      "observed_state": {}
+    },
+    {
+      "index": 84,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['Uncommitted changes:\\nM .beads/issues.jsonl', 'No commits ahead of origin/main']",
+      "status": "failure",
+      "timestamp": "2026-02-08 04:16:25.957651",
+      "observed_state": {}
+    },
+    {
+      "index": 85,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['No commits ahead of origin/main', 'Reflection not captured - invoke /reflect (Mandatory for Finalization)']",
+      "status": "failure",
+      "timestamp": "2026-02-08 14:56:24.345785",
+      "observed_state": {}
+    },
+    {
+      "index": 86,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['Uncommitted changes:\\nM .agent/reflections.json', 'No commits ahead of origin/main']",
+      "status": "failure",
+      "timestamp": "2026-02-08 14:58:52.977194",
+      "observed_state": {}
+    },
+    {
+      "index": 87,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['No commits ahead of origin/main', \"Linked repo .agent has changes on protected branch 'main'. Please use a feature branch.\", 'No PR found for linked repo .agent (branch: main)']",
+      "status": "failure",
+      "timestamp": "2026-02-08 14:59:07.325306",
+      "observed_state": {}
+    },
+    {
+      "index": 88,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['Uncommitted changes:\\nM ledgers/progress_ledger.json', 'No commits ahead of origin/main', 'Reflection not captured - invoke /reflect (Mandatory for Finalization)']",
+      "status": "failure",
+      "timestamp": "2026-02-08 14:59:17.087550",
+      "observed_state": {}
+    },
+    {
+      "index": 89,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['No commits ahead of origin/main']",
+      "status": "failure",
+      "timestamp": "2026-02-08 14:59:38.009999",
+      "observed_state": {}
+    },
+    {
+      "index": 90,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['Uncommitted changes: M file.py', 'No commits ahead of origin/main', \"Linked repo .agent has changes on protected branch 'main'. Please use a feature branch.\", 'No PR found for linked repo .agent (branch: main)']",
+      "status": "failure",
+      "timestamp": "2026-02-08 15:55:39.247680",
+      "observed_state": {}
+    },
+    {
+      "index": 91,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['No commits ahead of origin/main', 'Reflection not captured - invoke /reflect (Mandatory for Finalization)', \"Linked repo .agent has changes on protected branch 'main'. Please use a feature branch.\", 'No PR found for linked repo .agent (branch: main)']",
+      "status": "failure",
+      "timestamp": "2026-02-08 15:55:41.922628",
+      "observed_state": {}
+    },
+    {
+      "index": 92,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['No commits ahead of origin/main', \"Linked repo .agent has changes on protected branch 'main'. Please use a feature branch.\", 'No PR found for linked repo .agent (branch: main)', \"PR Review Issue required: No P0 PR review issue found for branch 'feature/test'. Create one with: bd create --priority P0 'PR Review: feature/test'\"]",
+      "status": "failure",
+      "timestamp": "2026-02-08 15:55:45.139734",
+      "observed_state": {}
+    },
+    {
+      "index": 93,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['Uncommitted changes: M file.py', 'No commits ahead of origin/main', \"Linked repo .agent has changes on protected branch 'main'. Please use a feature branch.\", 'No PR found for linked repo .agent (branch: main)']",
+      "status": "failure",
+      "timestamp": "2026-02-08 15:56:26.871165",
+      "observed_state": {}
+    },
+    {
+      "index": 94,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['No commits ahead of origin/main', 'Reflection not captured - invoke /reflect (Mandatory for Finalization)', \"Linked repo .agent has changes on protected branch 'main'. Please use a feature branch.\", 'No PR found for linked repo .agent (branch: main)']",
+      "status": "failure",
+      "timestamp": "2026-02-08 15:56:29.245372",
+      "observed_state": {}
+    },
+    {
+      "index": 95,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['No commits ahead of origin/main', \"Linked repo .agent has changes on protected branch 'main'. Please use a feature branch.\", 'No PR found for linked repo .agent (branch: main)']",
+      "status": "failure",
+      "timestamp": "2026-02-08 15:56:31.648411",
+      "observed_state": {}
+    },
+    {
+      "index": 96,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['Uncommitted changes: M file.py', 'No commits ahead of origin/main', \"Linked repo .agent has changes on protected branch 'main'. Please use a feature branch.\", 'No PR found for linked repo .agent (branch: main)']",
+      "status": "failure",
+      "timestamp": "2026-02-08 15:57:03.995462",
+      "observed_state": {}
+    },
+    {
+      "index": 97,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['No commits ahead of origin/main', 'Reflection not captured - invoke /reflect (Mandatory for Finalization)', \"Linked repo .agent has changes on protected branch 'main'. Please use a feature branch.\", 'No PR found for linked repo .agent (branch: main)']",
+      "status": "failure",
+      "timestamp": "2026-02-08 15:57:06.276754",
+      "observed_state": {}
+    },
+    {
+      "index": 98,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Clean Finalization complete",
+      "status": "success",
+      "timestamp": "2026-02-08 15:57:06.559208",
+      "observed_state": {}
+    },
+    {
+      "index": 99,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Clean Finalization complete",
+      "status": "success",
+      "timestamp": "2026-02-08 15:57:16.865344",
+      "observed_state": {}
+    },
+    {
+      "index": 100,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['Uncommitted changes:\\nM .agent/reflections.json\\nMM .beads/issues.jsonl']",
+      "status": "failure",
+      "timestamp": "2026-02-08 16:04:47.823598",
+      "observed_state": {}
+    },
+    {
+      "index": 101,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Clean Finalization complete",
+      "status": "success",
+      "timestamp": "2026-02-08 16:05:01.419542",
+      "observed_state": {}
+    },
+    {
+      "index": 102,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['Uncommitted changes:\\nM .beads/issues.jsonl']",
+      "status": "failure",
+      "timestamp": "2026-02-08 16:12:35.153849",
+      "observed_state": {}
+    },
+    {
+      "index": 103,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['Multiple commits detected (2). Squash required.', '  Run: git rebase -i HEAD~2']",
+      "status": "failure",
+      "timestamp": "2026-02-08 16:12:49.484293",
+      "observed_state": {}
+    },
+    {
+      "index": 104,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Clean Finalization complete",
+      "status": "success",
+      "timestamp": "2026-02-08 16:13:02.709646",
+      "observed_state": {}
+    },
+    {
+      "index": 105,
+      "task_id": "harness",
+      "action": "Phase: Initialization",
+      "outcome": "Passed with warnings: ['Plan approval is 37.5 hours old (stale)', 'Progress log missing - run /log-progress to initialize context']",
+      "status": "success",
+      "timestamp": "2026-02-08 17:57:13.106964",
+      "observed_state": {}
+    },
+    {
+      "index": 106,
+      "task_id": "harness",
+      "action": "Phase: Initialization",
+      "outcome": "Passed with warnings: ['Plan approval is 37.5 hours old (stale)', 'Progress log missing - run /log-progress to initialize context']",
+      "status": "success",
+      "timestamp": "2026-02-08 17:57:43.632952",
+      "observed_state": {}
+    },
+    {
+      "index": 107,
+      "task_id": "harness",
+      "action": "Phase: Initialization",
+      "outcome": "Passed with warnings: ['Plan approval is 37.5 hours old (stale)']",
+      "status": "success",
+      "timestamp": "2026-02-08 17:58:20.747009",
+      "observed_state": {}
+    },
+    {
+      "index": 108,
+      "task_id": "harness",
+      "action": "Phase: Initialization",
+      "outcome": "Clean initialization complete",
+      "status": "success",
+      "timestamp": "2026-02-08 18:06:15.388097",
+      "observed_state": {}
+    },
+    {
+      "index": 109,
+      "task_id": "harness",
+      "action": "Phase: Initialization",
+      "outcome": "Blocked: ['Plan approval is 5.0 hours old (stale)']",
+      "status": "failure",
+      "timestamp": "2026-02-08 18:06:26.544299",
+      "observed_state": {}
     }
   ],
-  "current_step_index": 82,
+  "current_step_index": 109,
   "stalls_detected": 0,
   "replan_history": []
 }

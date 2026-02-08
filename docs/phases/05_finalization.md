@@ -57,6 +57,20 @@ pre-commit run --all-files
 - [ ] Push to remote: `git push`
 - [ ] Verify: `git status` shows "up to date with origin"
 
+### PR Review Issue Creation (MANDATORY for Full Mode)
+
+> [!CAUTION]
+> PR merge is **BLOCKED** until the review issue is closed by another agent.
+
+After creating a rebased and squashed PR:
+
+- [ ] Create P0 beads issue: `bd create --priority P0 "PR Review: [branch-name]"`
+- [ ] Include PR link in issue description
+- [ ] Issue must invoke `/code-review` skill
+- [ ] Template: `~/.agent/templates/pr_review_issue_template.md`
+
+**Turbo Mode**: This requirement is waived for Turbo Mode tasks.
+
 ### Beads Update
 
 - [ ] Update issue status appropriately
