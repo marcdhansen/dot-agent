@@ -94,6 +94,10 @@ Use this summary for quick compliance verification. Click phase headers for deta
   - **BLOCKING**: Missing artifacts → **SESSION INCOMPLETE**
 - [ ] **Markdown Check**: Run `markdownlint` on modified `.md` files
 - [ ] **Git Sync**: Commit all changes, push to remote
+- [ ] **🔒 PR Review Issue**: Create P0 beads issue for PR review (Full Mode only)
+  - [ ] Include PR link in issue
+  - [ ] Invoke `/code-review` skill
+  - **BLOCKING**: PR merge blocked until review issue closed
 - [ ] **Beads Update**: Update/close issues appropriately
 - [ ] **Closure Notes**: Add implementation details to closed issues
 - [ ] **Orchestrator**: Run `check_protocol_compliance.py --finalize`
@@ -186,6 +190,7 @@ python ~/.gemini/antigravity/skills/Orchestrator/scripts/check_protocol_complian
 | TDD Completion Artifacts (ALL artifacts) | **BLOCKER** |
 | Quality gates passed | **BLOCKER** |
 | Git status clean | **BLOCKER** |
+| PR Review Issue exists | **BLOCKER** (for Full Mode) |
 | Session context established | **BLOCKER** |
 | Reflect invoked | WARNING |
 | Retrospective completed | WARNING |
