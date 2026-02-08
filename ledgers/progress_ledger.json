@@ -747,9 +747,63 @@
       "status": "failure",
       "timestamp": "2026-02-08 04:12:28.473766",
       "observed_state": {}
+    },
+    {
+      "index": 83,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['Uncommitted changes:\\nM .beads/issues.jsonl', 'No commits ahead of origin/main']",
+      "status": "failure",
+      "timestamp": "2026-02-08 04:14:31.075216",
+      "observed_state": {}
+    },
+    {
+      "index": 84,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['Uncommitted changes:\\nM .beads/issues.jsonl', 'No commits ahead of origin/main']",
+      "status": "failure",
+      "timestamp": "2026-02-08 04:16:25.957651",
+      "observed_state": {}
+    },
+    {
+      "index": 85,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['No commits ahead of origin/main', 'Reflection not captured - invoke /reflect (Mandatory for Finalization)']",
+      "status": "failure",
+      "timestamp": "2026-02-08 14:56:24.345785",
+      "observed_state": {}
+    },
+    {
+      "index": 86,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['Uncommitted changes:\\nM .agent/reflections.json', 'No commits ahead of origin/main']",
+      "status": "failure",
+      "timestamp": "2026-02-08 14:58:52.977194",
+      "observed_state": {}
+    },
+    {
+      "index": 87,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['No commits ahead of origin/main', \"Linked repo .agent has changes on protected branch 'main'. Please use a feature branch.\", 'No PR found for linked repo .agent (branch: main)']",
+      "status": "failure",
+      "timestamp": "2026-02-08 14:59:07.325306",
+      "observed_state": {}
+    },
+    {
+      "index": 88,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['Uncommitted changes:\\nM ledgers/progress_ledger.json', 'No commits ahead of origin/main', 'Reflection not captured - invoke /reflect (Mandatory for Finalization)']",
+      "status": "failure",
+      "timestamp": "2026-02-08 14:59:17.087550",
+      "observed_state": {}
     }
   ],
-  "current_step_index": 82,
+  "current_step_index": 88,
   "stalls_detected": 0,
   "replan_history": []
 }
