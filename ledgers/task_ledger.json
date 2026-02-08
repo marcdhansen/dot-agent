@@ -1,0 +1,70 @@
+{
+  "mission_id": "HARNESS-001",
+  "mission_description": "SOTA Agent Harness Migration",
+  "goals": [
+    "Mandatory Memory",
+    "Documentation Parity",
+    "Harness Review",
+    "Task/Progress Ledgers",
+    "Type-Safe Validators",
+    "Checkpoint/Resume"
+  ],
+  "tasks": [
+    {
+      "id": "lightrag-4qs",
+      "description": "Implement Task/Progress Ledgers (Magentic-One)",
+      "status": "completed",
+      "priority": "P1",
+      "dependencies": [],
+      "facts": [],
+      "guesses": [],
+      "created_at": "2026-02-05 19:37:25.686139",
+      "updated_at": "2026-02-05 19:42:49.873702"
+    },
+    {
+      "id": "lightrag-jwsg",
+      "description": "Type-Safe Compliance Validators (PydanticAI)",
+      "status": "completed",
+      "priority": "P1",
+      "dependencies": [],
+      "facts": [],
+      "guesses": [],
+      "created_at": "2026-02-05 19:37:26.938635",
+      "updated_at": "2026-02-05 19:42:51.310215"
+    },
+    {
+      "id": "lightrag-sof3",
+      "description": "Implement Checkpoint/Resume Capability",
+      "status": "completed",
+      "priority": "P2",
+      "dependencies": [],
+      "facts": [],
+      "guesses": [],
+      "created_at": "2026-02-05 19:42:20.642022",
+      "updated_at": "2026-02-05 19:43:17.833471"
+    },
+    {
+      "id": "lightrag-c6hz",
+      "description": "Multi-Model Orchestration Skill",
+      "status": "completed",
+      "priority": "P2",
+      "dependencies": [],
+      "facts": [],
+      "guesses": [],
+      "created_at": "2026-02-05 19:43:47.118696",
+      "updated_at": "2026-02-05 19:43:49.191099"
+    },
+    {
+      "id": "lightrag-bcak",
+      "description": "LangGraph Full Migration Epic",
+      "status": "completed",
+      "priority": "P1",
+      "dependencies": [],
+      "facts": [],
+      "guesses": [],
+      "created_at": "2026-02-05 19:54:55.599207",
+      "updated_at": "2026-02-05 19:59:41.227096"
+    }
+  ],
+  "metadata": {}
+}
