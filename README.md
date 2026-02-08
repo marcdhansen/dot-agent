@@ -87,3 +87,4 @@ This global hub is maintained by:
 ---
 
 **Remember**: This hub replaces the previous `~/.gemini/` structure with a standardized approach that aligns with workspace-level organization for better consistency and navigation.
+# Protocols Update
