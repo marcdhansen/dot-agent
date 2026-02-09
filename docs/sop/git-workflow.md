@@ -69,3 +69,18 @@ When a task requires changes to multiple repositories (e.g., primary workspace p
 6. **Infrastructure Issues**: Modifications to global repositories (`~/.gemini`, `~/.agent`) REQUIRE a dedicated Beads issue for the infrastructure change itself.
 
 **Enforcement**: The Orchestrator will validate linked repositories during the Finalization phase.
+
+---
+
+## 🖥️ GitHub UI Merging
+
+When a Pull Request is ready and approved, it must be merged using the **"Squash and merge"** button.
+
+1. **Navigate** to the Pull Request.
+2. **Scroll** to the merge section.
+3. **Dropdown**: Click the arrow next to the merge button and select **"Squash and merge"**.
+4. **Confirm**: Click the green "Squash and merge" button.
+5. **Message**: Ensure the commit message follows the Conventional Commits format and includes the Beads Issue ID.
+
+> [!WARNING]
+> Never use "Create a merge commit" or "Rebase and merge" in the GitHub UI, as this violates the linear atomic history requirement.

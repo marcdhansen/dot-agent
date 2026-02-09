@@ -140,6 +140,16 @@ To ensure cross-session continuity and self-evolution, the following systems are
 
 → **[COLLABORATION.md](docs/sop/COLLABORATION.md)** — One task per agent, branch isolation, explicit staging
 
+### 🏗️ **PR Workflow Rules**
+
+All code changes **MUST** follow the Pull Request (PR) workflow:
+
+1. **Feature branch isolation**: All changes occur on `agent/*` or `feature/*` branches.
+2. **PR creation**: A GitHub PR must be created before the session is finalized.
+3. **Blocking Approval**: For implementation tasks, PR approval from a different agent is **MANDATORY** and **BLOCKING**.
+4. **Handoff transparency**: The PR link must be included in the session handoff.
+5. **Administrative Exception**: Small, metadata-only changes (e.g., creating Beads issues, doc fixes) may use Turbo Mode without a full PR workflow if appropriate.
+
 ---
 
 ## 🎯 **Quick Commands**

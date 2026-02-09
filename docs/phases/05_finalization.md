@@ -18,6 +18,7 @@ Ensure all work is committed, quality gates passed, and context preserved for fu
 - [ ] **Quality Gates**: Run linters, tests, pre-commit hooks
 - [ ] **Markdown Check**: Run `markdownlint` on modified `.md` files
 - [ ] **Git Sync**: Commit all changes, push to remote
+- [ ] **PR Creation**: Create a Pull Request for the feature branch
 - [ ] **Beads Update**: Update/close issues appropriately
 - [ ] **Closure Notes**: Add implementation details to closed issues
 - [ ] **Orchestrator Check**: Run `check_protocol_compliance.py --finalize`
@@ -55,6 +56,9 @@ pre-commit run --all-files
 - [ ] Commit with descriptive message
 - [ ] Sync Beads: `bd sync`
 - [ ] Push to remote: `git push`
+- [ ] **Create PR**: Create a GitHub Pull Request for the current branch.
+  - Use `gh pr create --fill` or equivalent.
+  - Ensure the PR description follows the standardized template.
 - [ ] Verify: `git status` shows "up to date with origin"
 
 ### PR Review Issue Creation (MANDATORY for Full Mode)
