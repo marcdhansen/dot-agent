@@ -990,9 +990,45 @@
       "status": "failure",
       "timestamp": "2026-02-08 18:06:26.544299",
       "observed_state": {}
+    },
+    {
+      "index": 110,
+      "task_id": "harness",
+      "action": "Phase: Initialization",
+      "outcome": "Passed with warnings: ['Progress log missing - run /log-progress to initialize context']",
+      "status": "success",
+      "timestamp": "2026-02-09 15:24:59.931001",
+      "observed_state": {}
+    },
+    {
+      "index": 111,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['Reflection not captured - invoke /reflect (Mandatory for Finalization)']",
+      "status": "failure",
+      "timestamp": "2026-02-09 21:00:16.553377",
+      "observed_state": {}
+    },
+    {
+      "index": 112,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['Uncommitted changes:\\nM .agent/reflections.json']",
+      "status": "failure",
+      "timestamp": "2026-02-09 21:00:43.760305",
+      "observed_state": {}
+    },
+    {
+      "index": 113,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Clean Finalization complete",
+      "status": "success",
+      "timestamp": "2026-02-09 21:01:00.155310",
+      "observed_state": {}
     }
   ],
-  "current_step_index": 109,
+  "current_step_index": 113,
   "stalls_detected": 0,
   "replan_history": []
 }
