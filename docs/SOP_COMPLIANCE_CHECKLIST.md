@@ -191,8 +191,11 @@ python ~/.gemini/antigravity/skills/Orchestrator/scripts/check_protocol_complian
 | TDD Completion Artifacts (ALL artifacts) | **BLOCKER** |
 | Quality gates passed | **BLOCKER** |
 | Git status clean | **BLOCKER** |
+<<<<<<< agent/agent-harness-v0o
 | PR created for code changes | **BLOCKER** |
 | PR link in handoff | **BLOCKER** |
+=======
+>>>>>>> main
 | PR Review Issue exists | **BLOCKER** (for Full Mode) |
 | Session context established | **BLOCKER** |
 | Reflect invoked | WARNING |

@@ -900,7 +900,7 @@
       "status": "success",
       "timestamp": "2026-02-08 15:57:16.865344",
       "observed_state": {}
-    },
+},
     {
       "index": 100,
       "task_id": "harness",
@@ -1028,7 +1028,7 @@
       "observed_state": {}
     }
   ],
-  "current_step_index": 113,
+  "currennt_step_index": 113,
   "stalls_detected": 0,
   "replan_history": []
 }
