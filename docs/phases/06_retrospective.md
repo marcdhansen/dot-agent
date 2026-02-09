@@ -90,6 +90,7 @@ Persist learnings to cross-session memory:
 Provide clear summary including:
 
 - [ ] Work completed and deliverables
+- [ ] **PR Link**: Link to the GitHub Pull Request created during Finalization
 - [ ] Beads issues created/closed (list specific IDs)
 - [ ] Skills used during session
 - [ ] **Protocol Compliance**: Verify and summarize SOP compliance status (validated via Orchestrator)

@@ -1,0 +1,140 @@
+#!/bin/bash
+
+# SOP Audit Report Tool
+# Generates comprehensive compliance and audit reports
+
+set -e
+
+# Colors for output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+NC='\033[0m' # No Color
+
+# Default parameters
+DAYS=7
+DETAILED=false
+PROVIDER_FILTER=""
+WORKSPACE_FILTER=""
+
+# Parse arguments
+while [[ $# -gt 0 ]]; do
+    case $1 in
+        --days)
+            DAYS="$2"
+            shift 2
+            ;;
+        --detailed)
+            DETAILED=true
+            shift
+            ;;
+        --provider)
+            PROVIDER_FILTER="$2"
+            shift 2
+            ;;
+        --workspace)
+            WORKSPACE_FILTER="$2"
+            shift 2
+            ;;
+        --help|-h)
+            echo "SOP Audit Report Tool"
+            echo "Usage: $0 [OPTIONS]"
+            echo ""
+            echo "Options:"
+            echo "  --days N        Number of days to analyze (default: 7)"
+            echo "  --detailed      Show detailed violation reports"
+            echo "  --provider P    Filter by provider (gemini, opencode, claude)"
+            echo "  --workspace W   Filter by workspace path"
+            echo "  --help, -h      Show this help message"
+            echo ""
+            echo "Examples:"
+            echo "  $0 --days 30 --detailed"
+            echo "  $0 --provider opencode --days 7"
+            echo "  $0 --workspace /Users/marc/project --days 14"
+            exit 0
+            ;;
+        *)
+            echo "Unknown option: $1"
+            echo "Use --help for usage information"
+            exit 1
+            ;;
+    esac
+done
+
+echo -e "${BLUE}📊 SOP Compliance Audit Report${NC}"
+echo -e "${BLUE}=============================${NC}"
+echo
+
+# Check if audit log exists
+AUDIT_LOG="$HOME/.agent/logs/session_audit.log"
+if [ ! -f "$AUDIT_LOG" ]; then
+    echo -e "${YELLOW}⚠️  No audit log found at $AUDIT_LOG${NC}"
+    echo -e "${YELLOW}   Run agent sessions to generate audit data${NC}"
+    exit 0
+fi
+
+# Generate report using Python audit logger
+echo -e "${YELLOW}🔍 Analyzing audit data (last $DAYS days)...${NC}"
+echo
+
+# Build filter arguments
+FILTER_ARGS="--days $DAYS"
+if [ -n "$PROVIDER_FILTER" ]; then
+    FILTER_ARGS="$FILTER_ARGS --provider $PROVIDER_FILTER"
+fi
+
+# Run the audit report
+python3 "$HOME/.agent/bin/session-audit-log" --report $FILTER_ARGS
+
+echo
+echo -e "${BLUE}📋 Additional Analysis${NC}"
+echo -e "${BLUE}=====================${NC}"
+
+# Analyze specific patterns if detailed mode
+if [ "$DETAILED" = true ]; then
+    echo
+    echo -e "${YELLOW}🔍 Detailed Violation Analysis${NC}"
+    echo -e "${YELLOW}-----------------------------${NC}"
+    
+    # Find recent violations
+    echo "Recent violations (last $DAYS days):"
+    grep -i "failed\|blocked\|violation" "$AUDIT_LOG" | tail -10 | while IFS= read -r line; do
+        timestamp=$(echo "$line" | cut -d'|' -f1)
+        event=$(echo "$line" | cut -d'|' -f2)
+        provider=$(echo "$line" | cut -d'|' -f3)
+        workspace=$(echo "$line" | cut -d'|' -f4)
+        details=$(echo "$line" | cut -d'|' -f6-)
+        
+        echo -e "  ${RED}•${NC} $timestamp | $provider | $event"
+        if [ -n "$details" ]; then
+            echo -e "    $details"
+        fi
+    done
+    
+    echo
+    echo -e "${YELLOW}📈 Session Statistics${NC}"
+    echo -e "${YELLOW}--------------------${NC}"
+    
+    # Count sessions by provider
+    echo "Sessions by provider:"
+    cut -d'|' -f3 "$AUDIT_LOG" | grep -v "^$" | sort | uniq -c | sort -nr | while read count provider; do
+        echo -e "  $provider: $count sessions"
+    done
+    
+    echo
+    echo "Sessions by workspace:"
+    cut -d'|' -f4 "$AUDIT_LOG" | grep -v "^$" | sort | uniq -c | sort -nr | head -5 | while read count workspace; do
+        echo -e "  $workspace: $count sessions"
+    done
+fi
+
+echo
+echo -e "${BLUE}🔗 Quick Links${NC}"
+echo -e "${BLUE}==============${NC}"
+echo -e "Audit Log: ${AUDIT_LOG}"
+echo -e "Compliance Log: $HOME/.agent/logs/compliance_log.json"
+echo -e "Session Gate: $HOME/.agent/bin/agent-session-gate"
+
+echo
+echo -e "${GREEN}✅ Report generation complete${NC}"
