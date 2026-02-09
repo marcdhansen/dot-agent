@@ -100,7 +100,7 @@ Use this summary for quick compliance verification. Click phase headers for deta
   - [ ] Invoke `/code-review` skill
   - **BLOCKING**: PR merge blocked until review issue closed
 - [ ] **Beads Update**: Update/close issues appropriately
-- [ ] **Closure Notes**: Add implementation details to closed issues
+- [ ] **Closure Notes**: Add implementation details to closed issues (using `bd comments add <issue-id> "note"`)
 - [ ] **Orchestrator**: Run `check_protocol_compliance.py --finalize`
 
 ### [Phase 6: Retrospective (Retrospective)](phases/06_retrospective.md) — MANDATORY
