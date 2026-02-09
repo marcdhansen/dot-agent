@@ -94,6 +94,7 @@ Use this summary for quick compliance verification. Click phase headers for deta
   - **BLOCKING**: Missing artifacts → **SESSION INCOMPLETE**
 - [ ] **Markdown Check**: Run `markdownlint` on modified `.md` files
 - [ ] **Git Sync**: Commit all changes, push to remote
+- [ ] **🔒 PR Creation**: **MANDATORY** for code changes. Create a PR for the feature branch.
 - [ ] **🔒 PR Review Issue**: Create P0 beads issue for PR review (Full Mode only)
   - [ ] Include PR link in issue
   - [ ] Invoke `/code-review` skill
@@ -107,7 +108,7 @@ Use this summary for quick compliance verification. Click phase headers for deta
 - [ ] **Reflect**: Generate `.reflection_input.json` with structured learnings
 - [ ] **Harness Review**: Evaluate protocol effectiveness using RBT analysis
 - [ ] **Memory Sync**: Persist learnings to AutoMem/OpenViking
-- [ ] **Handoff**: Summarize work, issues created / closed, next steps
+- [ ] **Handoff**: Summarize work, including **PR link**, issues created / closed, next steps
 - [ ] **Protocol Compliance**: Verify and summarize SOP compliance status (validated via Orchestrator)
 - [ ] **Plan Cleanup**: Clear approval marker in `task.md`
 - [ ] **Strategic Analysis**: Address cognitive load, patterns, improvements, emergent methods
@@ -190,6 +191,8 @@ python ~/.gemini/antigravity/skills/Orchestrator/scripts/check_protocol_complian
 | TDD Completion Artifacts (ALL artifacts) | **BLOCKER** |
 | Quality gates passed | **BLOCKER** |
 | Git status clean | **BLOCKER** |
+| PR created for code changes | **BLOCKER** |
+| PR link in handoff | **BLOCKER** |
 | PR Review Issue exists | **BLOCKER** (for Full Mode) |
 | Session context established | **BLOCKER** |
 | Reflect invoked | WARNING |
