@@ -193,6 +193,8 @@ python ~/.gemini/antigravity/skills/Orchestrator/scripts/check_protocol_complian
 | Git status clean | **BLOCKER** |
 | PR created for code changes | **BLOCKER** |
 | PR link in handoff | **BLOCKER** |
+| PR created for code changes | **BLOCKER** |
+| PR link in handoff | **BLOCKER** |
 | PR Review Issue exists | **BLOCKER** (for Full Mode) |
 | Session context established | **BLOCKER** |
 | Reflect invoked | WARNING |
