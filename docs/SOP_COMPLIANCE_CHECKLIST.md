@@ -61,6 +61,7 @@ Use this summary for quick compliance verification. Click phase headers for deta
 ### [Phase 4: Execution](phases/04_execution.md)
 
 - [ ] Keep `task.md` updated as living document
+- [ ] **🔒 SOP Infrastructure Changes**: Code changes to Orchestrator scripts, skill scripts, SKILL.md files, or SOP docs **automatically trigger Full Mode** (Turbo Mode blocked)
 - [ ] **🔒 Follow Mandatory Global TDD Workflow** - **[Global TDD Workflow](sop/tdd-workflow.md)**
   - [ ] **Specification Phase**: Define requirements and success criteria in planning docs
   - [ ] **🔴 Red Phase**: Create failing tests that define expectations
@@ -99,13 +100,19 @@ Use this summary for quick compliance verification. Click phase headers for deta
   - [ ] Include PR link in issue
   - [ ] Invoke `/code-review` skill
   - **BLOCKING**: PR merge blocked until review issue closed
+- [ ] **🔒 PR Rejection Response**: If PR received `REQUEST_CHANGES`:
+  - [ ] Classify feedback (minor fix / rework / decomposition)
+  - [ ] If decomposition requested: close original PR, create Epic/parent issue, create child issues, create focused child PRs
+  - [ ] If ≥2 rejections: decomposition is MANDATORY
+  - [ ] Reference: [PR Response Protocol](sop/pr-response-protocol.md)
+  - **BLOCKING**: Thrashing guard violation (≥2 rejections without decomposition) → **WORK BLOCKED**
 - [ ] **Beads Update**: Update/close issues appropriately
 - [ ] **Closure Notes**: Add implementation details to closed issues (using `bd comments add <issue-id> "note"`)
 - [ ] **Orchestrator**: Run `check_protocol_compliance.py --finalize`
 
 ### [Phase 6: Retrospective (Retrospective)](phases/06_retrospective.md) — MANDATORY
 
-- [ ] **Reflect**: Generate `.reflection_input.json` with structured learnings
+- [ ] **Reflect**: **MANDATORY** Generate `.reflection_input.json` with structured learnings using `/reflect`
 - [ ] **Harness Review**: Evaluate protocol effectiveness using RBT analysis
 - [ ] **Memory Sync**: Persist learnings to AutoMem/OpenViking
 - [ ] **Handoff**: Summarize work, including **PR link**, issues created / closed, next steps
@@ -197,8 +204,8 @@ python ~/.gemini/antigravity/skills/Orchestrator/scripts/check_protocol_complian
 | PR link in handoff | **BLOCKER** |
 | PR Review Issue exists | **BLOCKER** (for Full Mode) |
 | Session context established | **BLOCKER** |
-| Reflect invoked | WARNING |
-| Retrospective completed | WARNING |
+| Reflect invoked (.reflection_input.json) | **BLOCKER** |
+| Retrospective completed | **BLOCKER** |
 
 **🔒 New Mandatory TDD Enforcement**:
 
