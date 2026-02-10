@@ -128,8 +128,22 @@ While the agent will handle most interactions, you can use these commands in you
 - `bd create`: Creates a new issue.
 - `bd update`: Updates an issue's status.
 - `bd close`: Closes a completed issue.
+- `bd comments add <id> "text"`: Add a comment/note to an issue.
 - `bd sync`: Forces an immediate flush of the database to the JSONL file and pushes to the remote git repo.
 - `bd worktree create <name>`: Create a new Git worktree with an automatic Beads database redirect, allowing parallel development in a separate directory without losing issue context.
+- `bd note <id> "text"`: (Alias) Quick way to add a closure note or comment. See [Aliases](#aliases).
+
+## Aliases
+
+To improve productivity and align with agent intuition, it is highly recommended to add the following aliases to your shell configuration (`~/.zshrc` or `~/.bashrc`):
+
+```bash
+# Beads Productivity Aliases
+alias bd-note='bd comments add'
+alias bd-note-file='bd comments add -f'
+```
+
+For agents using this protocol, you can simulate `bd note` by using `bd comments add`.
 
 ## Parallel Development Strategy
 

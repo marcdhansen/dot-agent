@@ -900,7 +900,7 @@
       "status": "success",
       "timestamp": "2026-02-08 15:57:16.865344",
       "observed_state": {}
-},
+    },
     {
       "index": 100,
       "task_id": "harness",
@@ -1026,9 +1026,36 @@
       "status": "success",
       "timestamp": "2026-02-09 21:01:00.155310",
       "observed_state": {}
+    },
+    {
+      "index": 114,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['Uncommitted changes:\\nM .beads/issues.jsonl\\n D .coverage\\n M test_ace_api_storage/ace_data/context_playbook.json\\n?? rag_storage_ace_test/\\n?? test_ace_curator/\\n?? test_ace_curator_exec/\\n?? test_ace_policy_temp/\\n?? test_ace_policy_temp_large/\\n?? tests/test_download_cache.py\\n?? tests/test_kw_lazy.py\\n?? tests/test_rerank.py\\n?? tests/test_utils.py\\n?? tests/test_utils_simple.py', 'Commit message must include Beads issue ID in format [issue-id]', '  Correct Format Example: feat(auth): add validation [agent-harness-v0o]', 'Commit message does not follow conventional commit format', '  Required: <type>(<scope>): <description> [issue-id]', 'Reflection not captured - invoke /reflect (Mandatory for Finalization)', \"PR Review Issue required: No P0 PR review issue found for branch 'agent/test-ci-syntax-fix'. Create one with: bd create --priority P0 'PR Review: agent/test-ci-syntax-fix'\", 'Hook integrity failure: Hook integrity failure (pre-commit-framework): Tampered hooks: .git/hooks/pre-commit (missing expected pattern: #!/usr/bin/env bash...), .git/hooks/pre-push (missing expected pattern: #!/usr/bin/env bash...) - hooks may have been tampered with']",
+      "status": "failure",
+      "timestamp": "2026-02-09 21:13:54.726377",
+      "observed_state": {}
+    },
+    {
+      "index": 115,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['Multiple commits detected (2). Squash required before merging to ensure atomic history.', '  Run: git rebase -i origin/main', \"PR Review Issue required: No P0 PR review issue found for branch 'agent/test-ci-syntax-fix'. Create one with: bd create --priority P0 'PR Review: agent/test-ci-syntax-fix'\", 'Hook integrity failure: Hook integrity failure (pre-commit-framework): Tampered hooks: .git/hooks/pre-commit (missing expected pattern: #!/usr/bin/env bash...), .git/hooks/pre-push (missing expected pattern: #!/usr/bin/env bash...) - hooks may have been tampered with']",
+      "status": "failure",
+      "timestamp": "2026-02-09 21:15:44.727934",
+      "observed_state": {}
+    },
+    {
+      "index": 116,
+      "task_id": "harness",
+      "action": "Phase: Finalization",
+      "outcome": "Blocked: ['Uncommitted changes:\\nM .beads/issues.jsonl\\n M AGENTS.md', 'No PR found for linked repo .gemini (branch: agent/agent-harness-v0o)', 'No PR found for linked repo .agent (branch: agent/agent-harness-v0o)', \"PR Review Issue required: No P0 PR review issue found for branch 'agent/agent-harness-v0o'. Create one with: bd create --priority P0 'PR Review: agent/agent-harness-v0o'\", \"PR required for code changes: No PR found for branch 'agent/agent-harness-v0o'. Create one with: gh pr create --fill\"]",
+      "status": "failure",
+      "timestamp": "2026-02-09 22:11:53.190441",
+      "observed_state": {}
     }
   ],
-  "currennt_step_index": 113,
+  "current_step_index": 116,
   "stalls_detected": 0,
   "replan_history": []
 }
