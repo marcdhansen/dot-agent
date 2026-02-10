@@ -20,7 +20,7 @@ Ensure all work is committed, quality gates passed, and context preserved for fu
 - [ ] **Git Sync**: Commit all changes, push to remote
 - [ ] **PR Creation**: Create a Pull Request for the feature branch
 - [ ] **Beads Update**: Update/close issues appropriately
-- [ ] **Closure Notes**: Add implementation details to closed issues
+- [ ] **Closure Notes**: Add implementation details to closed issues (using `bd comments add <issue-id> "note"`)
 - [ ] **Orchestrator Check**: Run `check_protocol_compliance.py --finalize`
 
 ---
