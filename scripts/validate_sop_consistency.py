@@ -3,7 +3,7 @@
 SOP Consistency Validator
 
 Validates cross-agent SOP compliance across .agent, .gemini, .config, .antigravity directories.
-Intended to be run during Return-to-Base (RTB) process to ensure consistency.
+Intended to be run during Finalization process to ensure consistency.
 
 Usage:
     python ~/.agent/scripts/validate_sop_consistency.py [--project-dir /path/to/project]

@@ -39,7 +39,7 @@
 
 ## 🚀 **Universal Standards**
 
-For the definitive universal agent protocols (PFC, RTB, SMP), session management, and cross-agent coordination:
+For the definitive universal agent protocols (PFC, Finalization, SMP), session management, and cross-agent coordination:
 → **Read** [~/.agent/AGENTS.md](~/.agent/AGENTS.md)
 
 ---

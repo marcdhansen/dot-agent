@@ -89,7 +89,7 @@ git add .  # DANGEROUS - captures parallel work
 bd update lightrag-123 --set-labels agent:gemini
 
 # Sync frequently
-bd sync  # At PFC start and RTB end
+bd sync  # At PFC start and Finalization end
 
 # Manage dependencies
 bd dep lightrag-123 --blocks lightrag-124
